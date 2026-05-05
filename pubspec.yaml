@@ -1,0 +1,45 @@
+name: study_auto_router_1
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+  cupertino_icons: ^1.0.8
+
+  core:
+    path: core
+  core_ui:
+    path: core_ui
+  data:
+    path: data
+  domain:
+    path: domain
+  navigation:
+    path: navigation
+  screen_account:
+    path: features/screen_account
+  screen_main:
+    path: ./features/screen_main
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^6.0.0
+
+flutter:
+
+  uses-material-design: true
+
