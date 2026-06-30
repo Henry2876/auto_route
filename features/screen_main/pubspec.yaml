@@ -12,7 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   auto_route: 11.1.0
-
+  navigation:
+    path: ../../navigation
 
 dev_dependencies:
   flutter_test:

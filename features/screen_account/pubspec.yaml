@@ -14,8 +14,8 @@ dependencies:
 
   auto_route: 11.1.0
 
-  screen_main:
-    path: ../screen_main
+  navigation:
+    path: ../../navigation
 
 
 dev_dependencies:
