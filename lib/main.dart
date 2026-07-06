@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:screen_account/screen_account.dart';
-
-
+import 'package:navigation/navigation.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final _appRouter = AppRouter();
+
+  MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: _appRouter.config(),
       title: 'Study App',
-      home: const ScreenAccount(), // ← Главный экран
       debugShowCheckedModeBanner: false,
     );
   }
