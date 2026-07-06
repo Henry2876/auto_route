@@ -68,7 +68,7 @@ class ScreenAccount extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  context.router.push(const NamedRoute('/main'));
+                  context.router.replace(const NamedRoute('/main'));
                 },
                 child: Text(
                   'Войти',
