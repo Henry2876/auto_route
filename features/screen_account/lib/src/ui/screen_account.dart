@@ -1,8 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:screen_main/screen_main.dart';
+import 'package:navigation/navigation.dart';
 
-@RoutePage()
 class ScreenAccount extends StatelessWidget {
   const ScreenAccount({super.key});
 
@@ -18,7 +17,9 @@ class ScreenAccount extends StatelessWidget {
               radius: 60,
               backgroundColor: Colors.blueAccent,
               foregroundColor: Colors.white,
-              child: Text('FI',style: TextStyle(fontWeight: FontWeight.w900,fontSize: 60),
+              child: Text(
+                'FI',
+                style: TextStyle(fontWeight: FontWeight.w900, fontSize: 60),
               ),
             ),
           ),
@@ -68,6 +69,7 @@ class ScreenAccount extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
+                  context.router.replace(const MainRoute());
                 },
                 child: Text(
                   'Войти',

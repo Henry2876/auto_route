@@ -2,7 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'widgets/screen_main_widgets.dart';
 
-@RoutePage()
+
 class ScreenMain extends StatelessWidget {
   const ScreenMain({super.key});
 
