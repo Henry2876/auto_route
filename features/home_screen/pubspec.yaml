@@ -1,5 +1,5 @@
 name: home_screen
-description: "A new Flutter package project."
+description: "Home screen."
 version: 0.0.1
 homepage:
 
@@ -7,11 +7,12 @@ environment:
   sdk: ^3.11.3
   flutter: ">=1.17.0"
 
+
 dependencies:
   flutter:
     sdk: flutter
   auto_route: ^11.1.0
-  
+
 
 dev_dependencies:
   flutter_test:

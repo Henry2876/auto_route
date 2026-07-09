@@ -1,11 +1,12 @@
 name: authorization_screen
-description: "A new Flutter package project."
+description: "Auth screen."
 version: 0.0.1
 homepage:
 
 environment:
   sdk: ^3.11.3
   flutter: ">=1.17.0"
+
 
 dependencies:
   flutter:
@@ -14,9 +15,11 @@ dependencies:
   navigation:
     path: ../../navigation
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+
 
 flutter:

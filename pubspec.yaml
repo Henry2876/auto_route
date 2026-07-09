@@ -1,20 +1,16 @@
 name: study_auto_router_1
-description: "A new Flutter project."
+description: "Fitness app."
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
   sdk: ^3.11.3
 
+
 dependencies:
   flutter:
     sdk: flutter
-
-
-
   cupertino_icons: ^1.0.8
-
   core:
     path: core
   core_ui:
@@ -25,10 +21,6 @@ dependencies:
     path: domain
   navigation:
     path: navigation
-  screen_account:
-    path: features/screen_account
-  screen_main:
-    path: ./features/screen_main
   auto_route: ^11.1.0
 
 
@@ -36,12 +28,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-
   auto_route_generator: ^10.5.0
   build_runner: ^2.15.0
 
 
 flutter:
-
   uses-material-design: true
-

@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:home_screen/src/ui/widgets/widgets_home_screen.dart';
+import 'package:home_screen/src/ui/widgets/widgets.dart';
 
-
-class TrainingReportHomeScreen extends StatelessWidget {
-  const TrainingReportHomeScreen({super.key});
+class TrainingReport extends StatelessWidget {
+  const TrainingReport({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return buildMuscleReportChart();}
-
+    return buildMuscleReportChart();
+  }
 
   Widget buildMuscleReportChart() {
     // Данные для графика
@@ -82,7 +81,7 @@ class TrainingReportHomeScreen extends StatelessWidget {
             ),
           ),
           SizedBox(height: 10),
-          AverageValueHomeScreen(title: 'Усталость мышц за неделю:', value: '70%'),
+          AverageValue(title: 'Усталость мышц за неделю:', value: '70%'),
         ],
       ),
     );

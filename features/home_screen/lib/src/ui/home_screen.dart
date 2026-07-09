@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'widgets/widgets_home_screen.dart';
+import 'widgets/widgets.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -47,18 +47,18 @@ class HomeScreen extends StatelessWidget {
           children: [
             SizedBox(height: 20),
 
-            CalendarHomeScreen(),
+            Calendar(),
 
             SizedBox(height: 20),
 
-            TrainingReportHomeScreen(),
+            TrainingReport(),
 
             SizedBox(height: 20),
 
-            TrainingScrollHomeScreen(),
+            TrainingScroll(),
             SizedBox(height: 20),
 
-            NutritionReportHomeScreen(),
+            NutritionReport(),
 
             SizedBox(height: 200),
           ],

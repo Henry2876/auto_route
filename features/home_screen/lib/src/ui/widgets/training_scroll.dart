@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:home_screen/src/ui/widgets/widgets_home_screen.dart';
+import 'package:home_screen/src/ui/widgets/widgets.dart';
 
-class TrainingScrollHomeScreen extends StatelessWidget {
-  const TrainingScrollHomeScreen({super.key});
+class TrainingScroll extends StatelessWidget {
+  const TrainingScroll({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class TrainingScrollHomeScreen extends StatelessWidget {
             child: Row(
               children: List.generate(
                 30,
-                    (index) => // Генерируем 30 квадратов через цикл
+                (index) => // Генерируем 30 квадратов через цикл
                 Row(
                   children: [
                     Container(
@@ -45,7 +45,7 @@ class TrainingScrollHomeScreen extends StatelessWidget {
           ),
         ),
         SizedBox(height: 10),
-        AverageValueHomeScreen(title: 'Любимая тренировка:', value: 'Грудные'),
+        AverageValue(title: 'Любимая тренировка:', value: 'Грудные'),
       ],
     );
   }
