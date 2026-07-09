@@ -2,8 +2,8 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:navigation/navigation.dart';
 
-class ScreenAccount extends StatelessWidget {
-  const ScreenAccount({super.key});
+class AuthorizationScreen extends StatelessWidget {
+  const AuthorizationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class ScreenAccount extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  context.router.replace(const MainRoute());
+                  context.router.replace(const HomeRoute());
                 },
                 child: Text(
                   'Войти',

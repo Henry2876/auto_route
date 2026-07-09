@@ -15,13 +15,12 @@ dependencies:
   auto_route: ^11.1.0
 
 
-
-  screen_account:
-    path: ../features/screen_account
-  screen_main:
-    path: ../features/screen_main
   core:
     path: ../core
+  authorization_screen:
+     path: ../features/authorization_screen
+  home_screen:
+    path: ../features/home_screen
 
 dev_dependencies:
   flutter_test:

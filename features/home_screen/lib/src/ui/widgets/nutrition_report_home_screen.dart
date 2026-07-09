@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ScreenMainNutritionReport extends StatelessWidget{
-  const ScreenMainNutritionReport({super.key});
+class NutritionReportHomeScreen extends StatelessWidget{
+  const NutritionReportHomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return buildNutritionReport();

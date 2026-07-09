@@ -1,7 +1,6 @@
-name: screen_main
+name: authorization_screen
 description: "A new Flutter package project."
 version: 0.0.1
-publish_to: none
 homepage:
 
 environment:
@@ -11,14 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   auto_route: ^11.1.0
+  navigation:
+    path: ../../navigation
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-
-
 
 flutter:

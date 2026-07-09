@@ -1,4 +1,4 @@
 library routes;
 
-export 'account_route_wrapper.dart';
-export 'main_route_wrapper.dart';
+export 'authorization_route_wrapper.dart';
+export 'home_route_wrapper.dart';

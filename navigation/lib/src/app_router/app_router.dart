@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:navigation/src/app_router/routes/account_route_wrapper.dart';
-import 'package:navigation/src/app_router/routes/main_route_wrapper.dart';
+import 'package:navigation/src/app_router/routes/routes.dart';
+
 
 part 'app_router.gr.dart';
 
@@ -11,7 +11,7 @@ class AppRouter extends RootStackRouter {
 
   @override
   List<AutoRoute> get routes => [
-    AutoRoute(page: AccountRoute.page, initial: true,path: '/'),
-    AutoRoute(page: MainRoute.page, path: '/main')
+    AutoRoute(page: AuthorizationRoute.page, initial: true,path: '/'),
+    AutoRoute(page: HomeRoute.page, path: '/home')
   ];
 }

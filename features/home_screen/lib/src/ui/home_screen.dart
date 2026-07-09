@@ -1,10 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'widgets/screen_main_widgets.dart';
+import 'widgets/widgets_home_screen.dart';
 
 
-class ScreenMain extends StatelessWidget {
-  const ScreenMain({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,18 +47,18 @@ class ScreenMain extends StatelessWidget {
           children: [
             SizedBox(height: 20),
 
-            ScreenMainCalendar(),
+            CalendarHomeScreen(),
 
             SizedBox(height: 20),
 
-            ScreenMainTrainingReport(),
+            TrainingReportHomeScreen(),
 
             SizedBox(height: 20),
 
-            ScreenMainTrainingScroll(),
+            TrainingScrollHomeScreen(),
             SizedBox(height: 20),
 
-            ScreenMainNutritionReport(),
+            NutritionReportHomeScreen(),
 
             SizedBox(height: 200),
           ],
@@ -78,7 +78,7 @@ class ScreenMain extends StatelessWidget {
           BottomNavigationBarItem(
             icon: Icon(Icons.menu_book),
             label: 'Знания',
-            ),
+          ),
         ],
       ),
     );

@@ -153,6 +153,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  screen_account:
+    dependency: transitive
+    description:
+      path: "../screen_account"
+      relative: true
+    source: path
+    version: "0.0.1"
   screen_main:
     dependency: transitive
     description:

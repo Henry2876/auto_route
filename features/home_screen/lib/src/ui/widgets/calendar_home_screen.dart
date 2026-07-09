@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'screen_main_widgets.dart';
+import 'widgets_home_screen.dart';
 
-class ScreenMainCalendar extends StatelessWidget {
-  const ScreenMainCalendar({super.key});
+class CalendarHomeScreen extends StatelessWidget {
+  const CalendarHomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class ScreenMainCalendar extends StatelessWidget {
           ),
         ),
         SizedBox(height: 10),
-        ScreenMainAverageValue(title: 'Тренировок за неделю:', value: '3 раза'),
+        AverageValueHomeScreen(title: 'Тренировок за неделю:', value: '3 раза'),
       ],
     );
   }

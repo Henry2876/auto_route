@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ScreenMainAverageValue extends StatelessWidget {
+class AverageValueHomeScreen extends StatelessWidget {
   final String title;
   final String value;
-  const ScreenMainAverageValue({super.key, required this.title, required this.value});
+  const AverageValueHomeScreen({super.key, required this.title, required this.value});
 
   @override
   Widget build(BuildContext context) {
