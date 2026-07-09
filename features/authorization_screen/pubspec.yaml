@@ -1,19 +1,17 @@
-name: screen_account
-description: "A new Flutter package project."
+name: authorization_screen
+description: "Auth screen."
 version: 0.0.1
-publish_to: none
 homepage:
 
 environment:
   sdk: ^3.11.3
   flutter: ">=1.17.0"
 
+
 dependencies:
   flutter:
     sdk: flutter
-
   auto_route: ^11.1.0
-
   navigation:
     path: ../../navigation
 
@@ -24,6 +22,4 @@ dev_dependencies:
   flutter_lints: ^6.0.0
 
 
-
 flutter:
-

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:screen_main/src/ui/widgets/screen_main_widgets.dart';
+import 'package:home_screen/src/ui/widgets/widgets.dart';
 
-class ScreenMainTrainingScroll extends StatelessWidget {
-  const ScreenMainTrainingScroll({super.key});
+class TrainingScroll extends StatelessWidget {
+  const TrainingScroll({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class ScreenMainTrainingScroll extends StatelessWidget {
           ),
         ),
         SizedBox(height: 10),
-        ScreenMainAverageValue(title: 'Любимая тренировка:', value: 'Грудные'),
+        AverageValue(title: 'Любимая тренировка:', value: 'Грудные'),
       ],
     );
   }

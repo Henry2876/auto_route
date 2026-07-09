@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class ScreenMainNutritionReport extends StatelessWidget{
-  const ScreenMainNutritionReport({super.key});
+class NutritionReport extends StatelessWidget {
+  const NutritionReport({super.key});
+
   @override
   Widget build(BuildContext context) {
     return buildNutritionReport();
@@ -167,7 +168,6 @@ Widget _buildNutritionBar(NutritionData data) {
     ],
   );
 }
-
 
 // Класс данных для питания
 class NutritionData {
