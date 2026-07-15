@@ -14,6 +14,9 @@ dependencies:
   auto_route: ^11.1.0
   navigation:
     path: ../../navigation
+  flutter_bloc:  ^9.1.1
+  equatable: ^2.1.0
+  bloc: ^9.2.1
 
 
 dev_dependencies:
