@@ -1,8 +1,6 @@
 part of 'authorization_bloc.dart';
 
 
-enum AuthorizationStatus { initial, loading, success, error }
-
 class AuthorizationState extends Equatable {
   final String email;
   final String password;
@@ -20,13 +18,13 @@ class AuthorizationState extends Equatable {
     String? email,
     String? password,
     AuthorizationStatus? status,
-    String? errorMassage,
+    String? errorMessage,
   }) {
     return AuthorizationState(
       email: email ?? this.email,
       password: password ?? this.password,
       status: status ?? this.status,
-      errorMessage: errorMassage ?? this.errorMessage,
+      errorMessage: errorMessage ?? this.errorMessage,
     );
   }
 

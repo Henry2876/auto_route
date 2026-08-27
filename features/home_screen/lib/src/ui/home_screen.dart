@@ -1,7 +1,9 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:navigation/navigation.dart';
 import '../bloc/home_bloc.dart';
+import 'package:core/core.dart';
+import 'widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,12 +11,12 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => HomeBloc()..add(const LoadHomeData()),
+      create: (context) => HomeBloc(appRouter: appLocator.get<AppRouter>(),)..add(const LoadHomeDataEvent()),
       child: Scaffold(
         appBar: AppBar(
           title: GestureDetector(
             onTap: () {
-              context.read<HomeBloc>().add(const LogoPressed());
+              context.read<HomeBloc>().add(const LogoPressedEvent());
             },
             child: const Text(
               'FI',
@@ -26,16 +28,10 @@ class HomeScreen extends StatelessWidget {
           leading: IconButton(
             icon: const Icon(Icons.menu),
             onPressed: () {
-              context.read<HomeBloc>().add(const MenuPressed());
+              context.read<HomeBloc>().add(const MenuPressedEvent());
             },
           ),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.settings),
-              onPressed: () {
-                context.read<HomeBloc>().add(const SettingsPressed());
-              },
-            ),
+          actions: [ShowSettingsBottomSheet(logout: const BackAuthorizationScreenEvent()),
           ],
         ),
 
@@ -64,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(height: 16),
                     ElevatedButton(
                       onPressed: () {
-                        context.read<HomeBloc>().add(const LoadHomeData());
+                        context.read<HomeBloc>().add(const LoadHomeDataEvent());
                       },
                       child: const Text('Повторить'),
                     ),
@@ -78,7 +74,9 @@ class HomeScreen extends StatelessWidget {
                 Expanded(
                   child: RefreshIndicator(
                     onRefresh: () async {
-                      context.read<HomeBloc>().add(const RefreshHomeData());
+                      context.read<HomeBloc>().add(
+                        const RefreshHomeDataEvent(),
+                      );
                       await context.read<HomeBloc>().stream.firstWhere(
                         (s) => s.status != HomeStatus.loading,
                       );
@@ -94,7 +92,7 @@ class HomeScreen extends StatelessWidget {
                 BottomNavigationBar(
                   currentIndex: state.selectedTabIndex,
                   onTap: (index) {
-                    context.read<HomeBloc>().add(ChangeTab(index));
+                    context.read<HomeBloc>().add(ChangeTabEvent(index));
                   },
                   items: const [
                     BottomNavigationBarItem(

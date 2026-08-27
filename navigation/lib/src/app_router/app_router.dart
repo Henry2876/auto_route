@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:navigation/src/app_router/routes/routes.dart';
+import 'package:navigation/src/app_router/auth_guard.dart';
 
 part 'app_router.gr.dart';
 
@@ -11,6 +12,6 @@ class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
     AutoRoute(page: AuthorizationRoute.page, initial: true, path: '/'),
-    AutoRoute(page: HomeRoute.page, path: '/home'),
+    AutoRoute(page: HomeRoute.page, path: '/home', guards: [AuthGuard()]),
   ];
 }

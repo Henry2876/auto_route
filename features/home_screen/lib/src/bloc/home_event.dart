@@ -6,29 +6,33 @@ abstract class HomeEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class LoadHomeData extends HomeEvent {
-  const LoadHomeData();
+class LoadHomeDataEvent extends HomeEvent {
+  const LoadHomeDataEvent();
 }
 
-class RefreshHomeData extends HomeEvent {
-  const RefreshHomeData();
+class RefreshHomeDataEvent extends HomeEvent {
+  const RefreshHomeDataEvent();
 }
 
-class ChangeTab extends HomeEvent {
+class ChangeTabEvent extends HomeEvent {
   final int index;
-  const ChangeTab(this.index);
+  const ChangeTabEvent(this.index);
   @override
   List<Object> get props => [index];
 }
 
-class MenuPressed extends HomeEvent {
-  const MenuPressed();
+class MenuPressedEvent extends HomeEvent {
+  const MenuPressedEvent();
 }
 
-class SettingsPressed extends HomeEvent {
-  const SettingsPressed();
+class SettingsPressedEvent extends HomeEvent {
+  const SettingsPressedEvent();
 }
 
-class LogoPressed extends HomeEvent {
-  const LogoPressed();
+class LogoPressedEvent extends HomeEvent {
+  const LogoPressedEvent();
+}
+
+class BackAuthorizationScreenEvent extends HomeEvent{
+  const BackAuthorizationScreenEvent();
 }

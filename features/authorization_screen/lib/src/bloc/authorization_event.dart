@@ -7,27 +7,32 @@ abstract class AuthorizationEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class EmailChanged extends AuthorizationEvent {
+class EmailChangedEvent extends AuthorizationEvent {
   final String email;
 
-  const EmailChanged(this.email);
+  const EmailChangedEvent(this.email);
 
   @override
   List<Object> get props => [email];
 }
 
-class PasswordChanged extends AuthorizationEvent {
+class PasswordChangedEvent extends AuthorizationEvent {
   final String password;
 
-  const PasswordChanged(this.password);
+  const PasswordChangedEvent(this.password);
 
   @override
   List<Object> get props => [password];
 }
 
-class LoginSubmitted extends AuthorizationEvent {
-  const LoginSubmitted();
+class LoginSubmittedEvent extends AuthorizationEvent {
+  const LoginSubmittedEvent();
 
+  @override
+  List<Object> get props => [];
+}
+
+class GoHomeScreenEvent extends AuthorizationEvent {
   @override
   List<Object> get props => [];
 }

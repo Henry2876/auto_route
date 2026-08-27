@@ -1,14 +1,5 @@
 part of 'home_bloc.dart';
 
-
-enum HomeStatus {
-  initial,
-  loading,
-  success,
-  error
-}
-
-
 class HomeState extends Equatable {
   final HomeStatus status;
   final int selectedTabIndex;
@@ -19,7 +10,6 @@ class HomeState extends Equatable {
     this.selectedTabIndex = 0,
     this.errorMessage,
   });
-
 
   HomeState copyWith({
     HomeStatus? status,
