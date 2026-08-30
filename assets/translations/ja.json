@@ -1,0 +1,27 @@
+{
+  "appName": "FI",
+  "mainPage": {
+    "authorizationScreen": {
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "login": "ログイン",
+      "error": "エラー",
+      "invalidCredentials": "メールアドレスまたはパスワードが無効です",
+      "unknownError": "エラーが発生しました。後でもう一度お試しください。"
+    },
+    "homeScreen": {
+      "exercises": "エクササイズ",
+      "trainings": "トレーニング",
+      "info": "知識",
+      "account": "アカウント",
+      "language": "言語",
+      "aboutApp": "アプリについて",
+      "logOut": "ログアウト",
+      "listLanguage": "アプリの言語",
+      "error": "エラー",
+      "somethingWentWrong": "問題が発生しました",
+      "retry": "再試行",
+      "loadingError": "読み込みエラー"
+    }
+  }
+}

@@ -59,7 +59,7 @@ class AuthorizationBloc extends Bloc<AuthorizationEvent, AuthorizationState> {
         emit(
           state.copyWith(
             status: AuthorizationStatus.error,
-            errorMessage: 'Неверный email или password ',
+            errorMessage: LocaleKeys.mainPage_authorizationScreen_invalidCredentials.tr(),
           ),
         );
       }
@@ -67,7 +67,7 @@ class AuthorizationBloc extends Bloc<AuthorizationEvent, AuthorizationState> {
       emit(
         state.copyWith(
           status: AuthorizationStatus.error,
-          errorMessage: 'Произошла ошибка. Попробуйте позже.',
+          errorMessage: LocaleKeys.mainPage_authorizationScreen_unknownError.tr(),
         ),
       );
     }

@@ -1,0 +1,27 @@
+{
+  "appName": "FI",
+  "mainPage": {
+    "authorizationScreen": {
+      "email": "电子邮箱",
+      "password": "密码",
+      "login": "登录",
+      "error": "错误",
+      "invalidCredentials": "邮箱或密码错误",
+      "unknownError": "发生错误，请稍后重试。"
+    },
+    "homeScreen": {
+      "exercises": "练习",
+      "trainings": "训练",
+      "info": "知识",
+      "account": "账户",
+      "language": "语言",
+      "aboutApp": "关于应用",
+      "logOut": "退出登录",
+      "listLanguage": "应用语言",
+      "error": "错误",
+      "somethingWentWrong": "出错了",
+      "retry": "重试",
+      "loadingError": "加载错误"
+    }
+  }
+}
