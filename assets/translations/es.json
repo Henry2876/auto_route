@@ -1,0 +1,27 @@
+{
+  "appName": "FI",
+  "mainPage": {
+    "authorizationScreen": {
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "login": "Iniciar sesión",
+      "error": "Error",
+      "invalidCredentials": "Correo o contraseña incorrectos",
+      "unknownError": "Ocurrió un error. Inténtelo más tarde."
+    },
+    "homeScreen": {
+      "exercises": "Ejercicios",
+      "trainings": "Entrenamientos",
+      "info": "Conocimiento",
+      "account": "Cuenta",
+      "language": "Idioma",
+      "aboutApp": "Acerca de la App",
+      "logOut": "Cerrar sesión",
+      "listLanguage": "Idioma de la App",
+      "error": "Error",
+      "somethingWentWrong": "Algo salió mal",
+      "retry": "Reintentar",
+      "loadingError": "Error de carga"
+    }
+  }
+}

@@ -11,16 +11,18 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => HomeBloc(appRouter: appLocator.get<AppRouter>(),)..add(const LoadHomeDataEvent()),
+      create: (context) =>
+          HomeBloc(appRouter: appLocator.get<AppRouter>())
+            ..add(const LoadHomeDataEvent()),
       child: Scaffold(
         appBar: AppBar(
           title: GestureDetector(
             onTap: () {
               context.read<HomeBloc>().add(const LogoPressedEvent());
             },
-            child: const Text(
-              'FI',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+            child: Text(
+              LocaleKeys.appName.tr(),
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
             ),
           ),
           centerTitle: true,
@@ -31,7 +33,10 @@ class HomeScreen extends StatelessWidget {
               context.read<HomeBloc>().add(const MenuPressedEvent());
             },
           ),
-          actions: [ShowSettingsBottomSheet(logout: const BackAuthorizationScreenEvent()),
+          actions: [
+            ShowSettingsBottomSheet(
+              logout: const BackAuthorizationScreenEvent(),
+            ),
           ],
         ),
 
@@ -40,7 +45,7 @@ class HomeScreen extends StatelessWidget {
             if (state.status == HomeStatus.error) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text(state.errorMessage ?? 'Ошибка'),
+                  content: Text(state.errorMessage ?? LocaleKeys.mainPage_homeScreen_error.tr()),
                   backgroundColor: Colors.red,
                 ),
               );
@@ -56,13 +61,13 @@ class HomeScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text('Что-то пошло не так'),
+                    Text(LocaleKeys.mainPage_homeScreen_somethingWentWrong.tr()),
                     const SizedBox(height: 16),
                     ElevatedButton(
                       onPressed: () {
                         context.read<HomeBloc>().add(const LoadHomeDataEvent());
                       },
-                      child: const Text('Повторить'),
+                      child: Text(LocaleKeys.mainPage_homeScreen_retry.tr()),
                     ),
                   ],
                 ),
@@ -94,18 +99,18 @@ class HomeScreen extends StatelessWidget {
                   onTap: (index) {
                     context.read<HomeBloc>().add(ChangeTabEvent(index));
                   },
-                  items: const [
+                  items: [
                     BottomNavigationBarItem(
-                      icon: Icon(Icons.person),
-                      label: 'Упражнения',
+                      icon: const Icon(Icons.person),
+                      label: LocaleKeys.mainPage_homeScreen_exercises.tr(),
                     ),
                     BottomNavigationBarItem(
-                      icon: Icon(Icons.fitness_center),
-                      label: 'Тренировки',
+                      icon: const Icon(Icons.fitness_center),
+                      label: LocaleKeys.mainPage_homeScreen_trainings.tr(),
                     ),
                     BottomNavigationBarItem(
-                      icon: Icon(Icons.menu_book),
-                      label: 'Знания',
+                      icon: const Icon(Icons.menu_book),
+                      label: LocaleKeys.mainPage_homeScreen_info.tr(),
                     ),
                   ],
                 ),

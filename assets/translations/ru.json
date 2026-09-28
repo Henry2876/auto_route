@@ -1,0 +1,27 @@
+{
+  "appName": "FI",
+  "mainPage": {
+    "authorizationScreen": {
+      "email": "Электронная почта",
+      "password": "Пароль",
+      "login": "Войти",
+      "error": "Ошибка",
+      "invalidCredentials": "Неверный email или пароль",
+      "unknownError": "Произошла ошибка. Попробуйте позже."
+    },
+    "homeScreen": {
+      "exercises": "Упражнения",
+      "trainings": "Тренировки",
+      "info": "Знания",
+      "account": "Аккаунт",
+      "language": "Язык",
+      "aboutApp": "О приложении",
+      "logOut": "Выйти",
+      "listLanguage": "Язык приложения",
+      "error": "Ошибка",
+      "somethingWentWrong": "Что-то пошло не так",
+      "retry": "Повторить",
+      "loadingError": "Ошибка загрузки"
+    }
+  }
+}

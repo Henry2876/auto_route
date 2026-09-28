@@ -21,7 +21,7 @@ class AuthorizationScreen extends StatelessWidget {
             if (state.status == AuthorizationStatus.error) {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text(state.errorMessage ?? 'Ошибка'),
+                  content: Text(state.errorMessage ?? LocaleKeys.mainPage_authorizationScreen_error.tr()),
                   backgroundColor: Colors.red,
                   duration: const Duration(seconds: 2),
                 ),
@@ -41,7 +41,7 @@ class AuthorizationScreen extends StatelessWidget {
                       backgroundColor: Colors.blueAccent,
                       foregroundColor: Colors.white,
                       child: Text(
-                        'FI',
+                        LocaleKeys.appName.tr(),
                         style: TextStyle(
                           fontWeight: FontWeight.w900,
                           fontSize: 60,
@@ -61,7 +61,7 @@ class AuthorizationScreen extends StatelessWidget {
                               );
                             },
                             decoration: InputDecoration(
-                              hintText: 'Email',
+                              hintText: LocaleKeys.mainPage_authorizationScreen_email.tr(),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
@@ -77,7 +77,7 @@ class AuthorizationScreen extends StatelessWidget {
                               );
                             },
                             decoration: InputDecoration(
-                              hintText: 'Password',
+                              hintText: LocaleKeys.mainPage_authorizationScreen_password.tr(),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(12),
                               ),
@@ -112,7 +112,7 @@ class AuthorizationScreen extends StatelessWidget {
                         child: isLoading
                             ? CircularProgressIndicator()
                             : Text(
-                                'Войти',
+                                LocaleKeys.mainPage_authorizationScreen_login.tr(),
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.w500,
