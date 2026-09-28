@@ -1,0 +1,1 @@
+enum AuthorizationStatus { initial, loading, success, error }

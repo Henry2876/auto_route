@@ -12,6 +12,19 @@ dependencies:
   flutter:
     sdk: flutter
 
+  data:
+    path: ../data
+  domain:
+    path: ../domain
+  navigation:
+    path: ../navigation
+
+  equatable: ^2.1.0
+  flutter_bloc: ^9.1.1
+  get_it: ^9.2.1
+  shared_preferences: ^2.5.5
+  auto_route: ^11.1.0
+  easy_localization: ^3.0.8
 
 dev_dependencies:
   flutter_test:
